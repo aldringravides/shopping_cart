@@ -1,7 +1,6 @@
 class ShoppingCart
 	@@shopping_item = Array.new
 	def initialize pricing_rule = ""
-		Product.seeds
 		Item.clear
 		Discount.clear
 		discount_codes = pricing_rule.split(",")
